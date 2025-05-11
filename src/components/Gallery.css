@@ -1,0 +1,181 @@
+/* Gallery.css */
+
+/* General container styles */
+.Gallery-container {
+    padding: 20px;
+    background-color: #f5f5f5; /* Light Gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title styling */
+  .Gallery-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1976d2; /* Primary Blue */
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .Gallery-error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form container styling */
+  .Gallery-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Gallery-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Input fields and select dropdowns */
+  .Gallery-input,
+  .Gallery-select,
+  .Gallery-button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .Gallery-input:focus,
+  .Gallery-select:focus {
+    outline: none;
+    border-color: #1976d2; /* Focus state with primary blue */
+  }
+  
+  .Gallery-button {
+    background-color: #1976d2; /* Primary Blue */
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Gallery-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  .Gallery-button:hover:enabled {
+    background-color: #1565c0; /* Darker shade of blue */
+  }
+  
+  /* Filter section */
+  .Gallery-filter {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Gallery-filter .Gallery-label {
+    margin-bottom: 10px;
+  }
+  
+  /* Gallery grid for displaying images */
+  .Gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .Gallery-image-item {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .Gallery-image-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .Gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-bottom: 2px solid #1976d2; /* Border below the image */
+  }
+  
+  .Gallery-category {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #1976d2; /* Primary Blue */
+    color: white;
+    border-top: 2px solid #1565c0;
+  }
+  
+  /* No images found */
+  .Gallery-no-images {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .Gallery-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Gallery-image-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .Gallery-form,
+    .Gallery-filter {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .Gallery-title {
+      font-size: 1.5rem;
+    }
+  
+    .Gallery-button {
+      padding: 10px;
+    }
+  
+    .Gallery-input,
+    .Gallery-select {
+      padding: 10px;
+    }
+  }
+  

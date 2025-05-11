@@ -1,0 +1,91 @@
+/* Teaching.module.css */
+
+/* General Container */
+.Teaching-container {
+    padding: 20px;
+    background-color: #f5f5f5; /* Light Gray */
+  }
+  
+  /* Title */
+  .Teaching-title {
+    font-size: 2rem;
+    color: #1976d2; /* Primary Blue */
+  }
+  
+  /* Form Styling */
+  .Teaching-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Teaching-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .Teaching-button {
+    padding: 12px;
+    background-color: #1976d2; /* Primary Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .Teaching-button:hover {
+    background-color: #1565c0; /* Darker shade of blue */
+  }
+  
+  .Teaching-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Error Messages */
+  .Teaching-error {
+    color: red;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Course List */
+  .Teaching-courses-list {
+    margin-top: 20px;
+  }
+  
+  .Teaching-course-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Teaching-course-title {
+    color: #1976d2;
+    font-size: 1.4rem;
+  }
+  
+  .Teaching-material-link {
+    color: #1976d2;
+    text-decoration: none;
+  }
+  
+  .Teaching-material-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* No Courses Message */
+  .Teaching-no-courses {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  

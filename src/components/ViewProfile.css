@@ -1,0 +1,251 @@
+/* frontend/src/components/ViewProfile.css */
+
+.ViewProfile-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1400px;
+    margin: 40px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ViewProfile-heading {
+    color: #1976d2;
+    border-bottom: 3px solid #1976d2;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.ViewProfile-feedback {
+    color: #ff9800;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ViewProfile-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ViewProfile-userList {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.ViewProfile-subheading {
+    color: #1976d2;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.ViewProfile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ViewProfile-listItem {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.ViewProfile-listItem:hover {
+    background-color: #e3f2fd;
+}
+
+.ViewProfile-selected {
+    background-color: #bbdefb;
+}
+
+.ViewProfile-userPic {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #1976d2;
+}
+
+.ViewProfile-placeholderPic {
+    width: 50px;
+    height: 50px;
+    background-color: #1976d2;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid #1976d2;
+}
+
+.ViewProfile-profileDetails {
+    flex: 3;
+    background-color: #f9f9f9;
+    padding: 25px;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+    max-height: 700px;
+    overflow-y: auto;
+}
+
+.ViewProfile-section {
+    margin-bottom: 40px;
+}
+
+.ViewProfile-sectionHeading {
+    color: #1976d2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.ViewProfile-profilePic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #1976d2;
+    margin-bottom: 20px;
+}
+
+.ViewProfile-blogPost, .ViewProfile-publication, .ViewProfile-teaching, .ViewProfile-funding {
+    margin-bottom: 20px;
+}
+
+.ViewProfile-blogPost h4, .ViewProfile-publication h4, .ViewProfile-teaching h4, .ViewProfile-funding h4 {
+    color: #1976d2;
+    margin-bottom: 10px;
+}
+
+.ViewProfile-blogPost p, .ViewProfile-publication p, .ViewProfile-teaching p, .ViewProfile-funding p {
+    margin-bottom: 8px;
+}
+
+.ViewProfile-blogPost a, .ViewProfile-publication a, .ViewProfile-teaching a, .ViewProfile-funding a {
+    color: #1976d2;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.ViewProfile-blogPost a:hover, .ViewProfile-publication a:hover, .ViewProfile-teaching a:hover, .ViewProfile-funding a:hover {
+    text-decoration: underline;
+}
+
+.ViewProfile-inquiryForm {
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #1976d2;
+    border-radius: 8px;
+}
+
+.ViewProfile-formGroup {
+    margin-bottom: 20px;
+}
+
+.ViewProfile-formGroup label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.ViewProfile-input, .ViewProfile-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #1976d2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.ViewProfile-inputDisabled {
+    width: 100%;
+    padding: 10px;
+    border: 1.5px solid #bdbdbd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e0e0e0;
+    color: #757575;
+    font-size: 1em;
+}
+
+.ViewProfile-textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.ViewProfile-button {
+    background-color: #1976d2;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.ViewProfile-button:hover {
+    background-color: #135ba1;
+}
+
+.ViewProfile-galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.ViewProfile-galleryItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ViewProfile-galleryImage {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1976d2;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.ViewProfile-galleryImage:hover {
+    transform: scale(1.05);
+}
+
+.ViewProfile-galleryCaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555555;
+}
+
+.ViewProfile-publicationLinks a {
+    margin-right: 15px;
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.ViewProfile-publicationLinks a:hover {
+    text-decoration: underline;
+}
